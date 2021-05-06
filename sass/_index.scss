@@ -1,0 +1,278 @@
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    background:$sidebar-color;
+    border-right: 2px dashed $sidebar-font-color;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    @include flex-center;
+    h1{
+        color: $sidebar-font-color;
+        margin-bottom: 50px;
+        padding-bottom: 2px;
+        text-transform:uppercase;
+    }
+    ul{
+        li{
+            margin-bottom: 30px;
+            a{
+                color: $sidebar-font-color;
+                text-transform: capitalize;
+                &:hover{
+                    color:$font-color;
+                    border-bottom: 1px solid $font-color;
+                }
+            }
+        }
+    }
+}
+.header{
+    border-bottom: 2px dashed $font-color;
+    .main-content{
+        background:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)), url("../img/9bgo0st-.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //filter: grayscale(100%);
+        .content{
+            z-index: 100000;
+            color: $header-color;
+            text-align: center;
+            h1{
+                font-size:  60px;
+            }
+            p{
+                font-size: 30px;
+                letter-spacing: 10px;
+                margin-top: 20px;
+            }
+        }
+        
+    }
+}
+.about-me{
+    padding:50px 0px;
+    background-color: $bg-color;
+    border-bottom: 2px dashed $header-color;
+    .content{
+        color: $header-color;
+        width: 100%;
+        text-align: center;
+        @include flex-center;
+        flex-direction: column;
+        h2{
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+            width:700px;
+            text-align: center;
+            padding: 20px 0px;
+            
+        }
+    }
+}
+
+
+.skills{
+    padding:50px 0px;
+    background-color:$bg-color-two ;
+    border-bottom: 2px dashed $font-color;
+    .content{
+        width: 100%;
+        @include flex-center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        h2{
+            color: $font-color;
+            margin-bottom: 30px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+        p{
+            color: $font-color;
+        }
+        .containers {
+            width: 50%;
+            background-color: rgba(119, 119, 119, 0.4);
+            margin-bottom: 10px;
+            margin-top: 10px;
+          .skill {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            height: 10px;
+          }
+        .c,.cc{ 
+            width: 80%;
+            background-color: $font-color;
+            animation: mymove 5s infinite;
+            animation-iteration-count: 1;
+            @keyframes mymove {
+                from {width: 0%;}
+                to {width: 80%;}
+              }
+        }
+        .python{
+            width: 60%;
+             background-color: $font-color;
+            animation: mymovepython 5s infinite;
+            animation-iteration-count: 1;
+            @keyframes mymovepython {
+                from {width: 0%;}
+                to {width: 60%;}
+              }
+        }
+        .java{width: 50%;
+             background-color: $font-color;
+            animation: mymovejava 5s infinite;
+            animation-iteration-count: 1;
+            @keyframes mymovejava {
+                from {width: 0%;}
+                to {width: 50%;}
+              }
+        }
+        .html,.css{width: 60%;
+             background-color: $font-color;
+            animation: mymovecss 5s infinite;
+            animation-iteration-count: 1;
+            @keyframes mymovecss {
+                from {width: 0%;}
+                to {width: 60%;}
+              }
+        }
+        .cloudcomputing{ width: 30%;
+            background-color:$font-color;
+            animation: mymovecloud 5s infinite;
+            animation-iteration-count: 1;
+            @keyframes mymovecloud {
+                from {width: 0%;}
+                to {width: 30%;}
+              }
+        }
+        .ai{
+            width: 20%;
+             background-color: $font-color;
+            animation: mymoveai 5s infinite;
+            animation-iteration-count: 1;
+            @keyframes mymoveai {
+                from {width: 0%;}
+                to {width: 20%;}
+              }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+          }
+          
+          
+          
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/bg_4.jpg");*/
+// .navbartest{
+//     position: absolute;
+//     background-color: transparent;
+//     z-index: 10;
+//     width: 100%;
+//     .container{
+//         .content{
+//             ul{
+//                 @include flex;
+//                 justify-content: space-between;
+//                 width: 100%;
+//                 margin: 0px 400px;
+//                 background-color: transparent;
+//                 padding-top:30px ;
+//                 li{
+//                     a{
+//                         color: white;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// .headertest{
+//     background:linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)), url("../img/3bj0nCLG.jpg");
+//         height: 100vh;
+//         background-repeat: no-repeat;
+//         background-size: cover;  
+//         background-position: 20% 20%;
+//         position: relative;
+//         @include flex-center;
+//         flex-direction: column;
+//         color: white;
+//        // object-fit: cover;
+//         .content{
+//             z-index: 100000;
+//             color: white;
+//             text-align: center;
+//             flex-direction: column;
+//             h1{
+//                 font-size:  60px;
+//             }
+//             p{
+//                 font-size: 30px;
+//                 letter-spacing: 10px;
+//                 margin-top: 20px;
+//             }
+//         }
+
+// }
